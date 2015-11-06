@@ -1,0 +1,30 @@
+.label{
+	-fx-font-size: 15.0;
+} 
+
+
+
+.welcome-label{
+-fx-font-weight: bold;
+}
+
+
+#welcome-1{	
+	-fx-padding:-10.0,0.0,0.0,0.0;
+		-fx-font-size: 18.0;
+}
+
+#welcome-2{
+		-fx-font-size: 20.0;
+		
+}
+
+.button{
+	-fx-min-width: 149;
+	-fx-pref-width: 149;
+}
+
+.textfield{
+
+	
+}

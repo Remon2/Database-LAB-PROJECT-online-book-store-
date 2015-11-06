@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckoutController">
+	<children>
+		<HBox>
+			<children>
+				<VBox spacing="16.0">
+					<children>
+						<Label text="Credit Card Number" />
+						<Label text="Expiry Date" />
+					</children>
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</VBox>
+				<VBox spacing="10.0">
+					<children>
+						<TextField fx:id="creditCardText" />
+						<TextField fx:id="expiryDateTaxt" />
+					</children>
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</VBox>
+			</children>
+			<VBox.margin>
+				<Insets />
+			</VBox.margin>
+		</HBox>
+		<HBox alignment="CENTER" spacing="60.0">
+			<children>
+				<Button fx:id="checkOutButton" mnemonicParsing="false" onAction="#checkOut" text="Checkout" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#close" text="Close" />
+			</children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+		</HBox>
+	</children>
+	<padding>
+		<Insets left="10.0" top="10.0" />
+	</padding>
+</VBox>

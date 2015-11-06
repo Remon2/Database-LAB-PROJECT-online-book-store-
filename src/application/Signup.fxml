@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignupController">
+	<left>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+	</left>
+	<top>
+		<VBox alignment="CENTER" prefHeight="320.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="369.0" fitWidth="775.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/signup.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin></VBox>
+	</top>
+	<bottom>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+	</bottom>
+	<right>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+	</right>
+	<center>
+		<VBox prefHeight="347.0" prefWidth="1166.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox>
+					<children>
+						<VBox alignment="TOP_RIGHT" spacing="19.0">
+							<children>
+								<Label text="Username" />
+								<Label text="Email" />
+								<Label text="Password" />
+								<Label text="Confirm Password" />
+								<Label text="First Name" />
+								<Label text="Last Name" />
+								<Label text="Shipping Address" />
+								<Label text="Phone Number" />
+							</children>
+							<HBox.margin>
+								<Insets right="10.0" />
+							</HBox.margin>
+						</VBox>
+						<VBox alignment="TOP_CENTER" spacing="10.0">
+							<children>
+								<TextField fx:id="usernameText" />
+								<TextField fx:id="emailText" />
+								<PasswordField fx:id="passwordText" />
+								<PasswordField fx:id="confirmPasswordText" />
+								<TextField fx:id="firstNameText" />
+								<TextField fx:id="lastNameText" />
+								<TextField fx:id="shippingAddressText" />
+								<TextField fx:id="phoneText" />
+            				<VBox alignment="CENTER">
+            					<children>
+            						<Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerUser" text="Register" />
+            					</children>
+            					<VBox.margin>
+            						<Insets />
+            					</VBox.margin>
+            				</VBox>
+							</children>
+							<HBox.margin>
+								<Insets right="10.0" />
+							</HBox.margin>
+						</VBox>
+						<VBox spacing="18.0">
+							<children>
+								<Label fx:id="usererror" prefHeight="17.0" prefWidth="524.0" />
+								<Label fx:id="emailerror" prefHeight="17.0" prefWidth="577.0" />
+								<Label fx:id="passworderror" prefHeight="17.0" prefWidth="524.0" />
+								<Label fx:id="confirmerror" prefHeight="17.0" prefWidth="706.0" />
+								<Label fx:id="firstnameerror" prefHeight="17.0" prefWidth="668.0" />
+								<Label fx:id="lastnameerror" prefHeight="17.0" prefWidth="739.0" />
+								<Label fx:id="addresserror" prefHeight="17.0" prefWidth="589.0" />
+								<Label fx:id="phonenumbererror" prefHeight="17.0" prefWidth="740.0" />
+								<Label fx:id="usernameLabel" />
+								<Label fx:id="emailLabel" />
+								<Label fx:id="passwordLabel" />
+								<Label fx:id="confirmPasswordLabel" />
+								<Label fx:id="firstNameLabel" />
+								<Label fx:id="lastNameLabel" />
+								<Label fx:id="shippingAddressLabel" />
+								<Label fx:id="phoneLabel" />
+							</children>
+						</VBox>
+					</children>
+					<VBox.margin>
+						<Insets bottom="10.0" />
+					</VBox.margin>
+				</HBox>
+			</children>
+		</VBox>
+	</center>
+</BorderPane>

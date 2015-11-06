@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" prefHeight="72.0" prefWidth="335.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlertController">
+	<children>
+		<HBox alignment="CENTER">
+			<children>
+				<VBox alignment="CENTER" spacing="16.0">
+					<children>
+						<Label fx:id="alertLabell" alignment="CENTER" prefHeight="17.0" prefWidth="465.0" />
+					</children>
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</VBox>
+			</children>
+			<VBox.margin>
+				<Insets />
+			</VBox.margin>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="25.0" prefWidth="357.0" spacing="60.0">
+			<children>
+            <Button fx:id="okButton" mnemonicParsing="false" onAction="#close" text="OK" />
+			</children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+		</HBox>
+	</children>
+	<padding>
+		<Insets left="10.0" top="10.0" />
+	</padding>
+</VBox>

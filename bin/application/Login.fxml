@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+	<left>
+		<VBox alignment="CENTER" prefHeight="733.0" prefWidth="234.0" spacing="10.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox alignment="CENTER" prefHeight="31.0" prefWidth="179.0">
+					<children>
+						<VBox alignment="TOP_RIGHT" spacing="20.0">
+							<children>
+								<Label text="Username" />
+								<Label text="Password" />
+							</children>
+							<HBox.margin>
+								<Insets right="10.0" />
+							</HBox.margin>
+						</VBox>
+						<VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+							<children>
+								<TextField fx:id="usernameText" />
+								<PasswordField fx:id="passwordText" />
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+				<VBox alignment="CENTER" spacing="10.0">
+					<children>
+						<Label fx:id="wrongLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="244.0" />
+						<Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" text="Login" />
+					</children>
+				</VBox>
+				<VBox alignment="CENTER" spacing="10.0">
+					<children>
+						<Label text="New User ?" />
+						<Label fx:id="registerLabel" onMouseClicked="#signup" text="Register Now" textFill="#4400ff">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+					</children>
+				</VBox>
+			</children>
+			<BorderPane.margin>
+				<Insets bottom="100.0" left="10.0" />
+			</BorderPane.margin>
+		</VBox>
+	</left>
+	<top>
+		<VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+   <children>
+   			<Label text="Welcome to Libro Online Bookstore" BorderPane.alignment="CENTER">
+   				<font>
+   					<Font name="Neo Tech Alt Medium" size="48.0" />
+   				</font>
+   			</Label>
+   </children>
+		</VBox>
+	</top>
+	<right>
+		<VBox BorderPane.alignment="CENTER" />
+	</right>
+	<center>
+		<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="710.0" fitWidth="1065.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/login.jpg" />
+               </image></ImageView>
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		<VBox BorderPane.alignment="CENTER" />
+	</bottom>
+</BorderPane>
